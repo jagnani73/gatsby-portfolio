@@ -34,6 +34,7 @@ const data = [
     url: "https://www.twitter.com",
   },
 ]
+
 const links = data.map(link => {
   return (
     <li key={link.id}>
@@ -44,8 +45,10 @@ const links = data.map(link => {
   )
 })
 
-export default ({ styleClass }) => {
+export default props => {
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+    <ul className={`social-links ${props.styleClass ? props.styleClass : ""}`}>
+      {links}
+    </ul>
   )
 }

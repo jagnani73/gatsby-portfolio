@@ -31,10 +31,10 @@ module.exports = {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         // contentTypes: [`jobs`],
-        //   singleType : `about`
+        // singleTypes: [],
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],
-        singleTypes: [],
+        singleTypes: [`about`],
       },
     },
     // {
